@@ -1,7 +1,8 @@
-const Checkbox = () => {
+const Checkbox = (props) => {
+  const { select } = props;
   return (
     <td>
-      <input type="checkBox" />
+      <input type="checkBox" checked={select} />
     </td>
   );
 };

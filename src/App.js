@@ -8,16 +8,19 @@ const data = [
     name: "Allen",
     age: 35,
     salary: "120k",
+    select: false,
   },
   {
     name: "Ray",
     age: 25,
     salary: "150k",
+    select: true,
   },
   {
     name: "Seulgi",
     age: 26,
     salary: "150k",
+    select: true,
   },
 ];
 
@@ -25,6 +28,10 @@ const headers = [
   {
     label: "Name",
     id: "name",
+  },
+  {
+    label: "Select",
+    id: "select",
     component: Checkbox,
   },
   {
