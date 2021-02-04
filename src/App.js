@@ -1,12 +1,13 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import Table from "./Table";
+import Checkbox from "./Checkbox";
 
 const data = [
   {
     name: "Allen",
     age: 35,
-    salary: "150k",
+    salary: "120k",
   },
   {
     name: "Ray",
@@ -24,6 +25,7 @@ const headers = [
   {
     label: "Name",
     id: "name",
+    component: Checkbox,
   },
   {
     label: "Age",

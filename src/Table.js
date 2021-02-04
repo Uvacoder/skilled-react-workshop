@@ -17,8 +17,13 @@ const Table = (props) => {
             return (
               <tr key={`row-${i}`}>
                 {headers.map((h, j) => {
-                  //h is { label: "Name", id: "name" },
-                  return <td key={`cell-${i}-${j}`}>{d[h.id]}</td>;
+                  //h is { label: "Name", id: "name", component: Checkbox },
+                  const CellComponent = h.component;
+                  const label = d[h.id];
+                  const key = `cell-${i}-${j}`;
+                  if (CellComponent) {
+                    return <CellComponent key={key} label={label} />;
+                  } else return <td key={key}>{label}</td>;
                 })}
               </tr>
             );

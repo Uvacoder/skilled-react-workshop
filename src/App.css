@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  margin: 0 auto;
+  width: 800px;
+}
+
+table {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.odd-row {
+  background-color: #eeeeee;
+}
+.even-row {
+  background-color: #d4cfcf;
+}
+
+td {
+  padding: 10px 20px;
 }
 
 .App-logo {
@@ -35,13 +54,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-table {
-  border: red solid 2px;
-  border-radius: 15px;
-}
-
-td {
-  padding: 10px;
 }
