@@ -22,7 +22,13 @@ const Table = (props) => {
                   const label = d[h.id];
                   const key = `cell-${i}-${j}`;
                   if (CellComponent) {
-                    return <CellComponent key={key} select={label} />;
+                    return (
+                      <CellComponent
+                        key={key}
+                        select={label}
+                        onChange={props.onRowSelect}
+                      />
+                    );
                   } else return <td key={key}>{label}</td>;
                 })}
               </tr>

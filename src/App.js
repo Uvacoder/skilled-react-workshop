@@ -45,10 +45,11 @@ const headers = [
 ];
 
 function App() {
+  const onRowSelect = () => {};
   return (
     <div className="App">
       <div>This is an App</div>
-      <Table data={data} headers={headers}></Table>
+      <Table data={data} headers={headers} onRowSelect={onRowSelect} />
     </div>
   );
 }
