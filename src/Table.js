@@ -13,7 +13,7 @@ const Table = (props) => {
         </thead>
         <tbody>
           {data.map((d, i) => {
-            //h is { name: "Allen", age: 35 },
+            //d is { name: "Allen", age: 35, salary: "150K" },
             return (
               <tr key={`row-${i}`}>
                 {headers.map((h, j) => {
